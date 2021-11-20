@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     header('Access-Control-Allow-Origin: *');  
     header('Content-Type: application/json');
     
-require_once("../Config/conexion.php");
-require_once("../Models/Proveedores.php");
+require_once("../../Config/conexion.php");
+require_once("../../Socios/Models/Proveedores.php");
 $proveedores = new Proveedores();
 
 $body =json_decode(file_get_contents("php://input"), true);
