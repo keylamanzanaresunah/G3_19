@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     header('Content-Type: application/json');
 
 
-require_once("../config/conexion.php");
+require_once("../../config/conexion.php");
 require_once("../../Pedidos/models/Pedidos.php");
 $pedidos=new Pedidos();
 
