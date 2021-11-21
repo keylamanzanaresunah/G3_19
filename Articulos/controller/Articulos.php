@@ -11,8 +11,8 @@
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');
 
-    require_once("../config/Conexion.php");
-    require_once("../models/articulos.php");
+    require_once("../../config/conexion.php");
+    require_once("../../Articulos/models/articulos.php");
     $Articulos = new articulos();
 
     $body = json_decode(file_get_contents("php://input"), true);
